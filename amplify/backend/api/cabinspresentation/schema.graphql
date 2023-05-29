@@ -1,0 +1,10 @@
+type House @model @auth(rules: [{allow: public, operations: [read]}, {allow: private}]) {
+  id: ID!
+  name: String!
+  thumbnail: String!
+  thumbnailAlt: String!
+  beds: Int!
+  rate: Int!
+  rating: Int!
+}
+ 
